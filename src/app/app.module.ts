@@ -16,6 +16,8 @@ import { HeroSearchComponent }  from './hero-search.component';
 import { HeroDetailComponent }  from './hero-detail.component';
 import { HeroService }          from './hero.service';
 
+import { InputDateDirective } from './input-date.directive';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { HeroService }          from './hero.service';
     HeroDetailComponent,
     HeroesComponent,
     HeroSearchComponent,
+    InputDateDirective
   ],
   providers: [ HeroService ],
   bootstrap: [ AppComponent ]

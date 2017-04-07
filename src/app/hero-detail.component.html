@@ -5,7 +5,11 @@
   <div>
     <label>name: </label>
     <input [(ngModel)]="hero.name" placeholder="name" />
+    <br>
+    <label>birthday: </label>
+    <input type="date" [(ngModel)]="hero.birthday" placeholder="birthday" useValueAsDate/>
   </div>
   <button (click)="goBack()">Back</button>
   <button (click)="save()">Save</button>
+  <button (click)="log()">Log</button>
 </div>
